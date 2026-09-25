@@ -24,7 +24,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
           entities: [User, Report],
         }
       }
-    })
+    }),
     // TypeOrmModule.forRoot({
     //   type: 'better-sqlite3',
     //   database: 'db.sqlite',
