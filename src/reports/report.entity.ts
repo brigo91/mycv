@@ -5,9 +5,10 @@ export class Report {
   @PrimaryGeneratedColumn()
   id: number;
 
+  @Column({ default: false })
   approved: boolean;
 
-  @Column({ default: false })
+  @Column()
   price: number;
 
   @Column()
