@@ -20,6 +20,7 @@ export class ReportsController {
 	}
 
 	@Patch('/:id')
+	@UseGuards(AuthGuard)
 	approveReport(@Param('id') id: string, @Body() body: ApproveReportDto) {
 		return this.reportsService.changeApproval(id, body.approved);
 	}
